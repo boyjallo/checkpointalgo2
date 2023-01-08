@@ -1,0 +1,11 @@
+fonction tri_insertion(Tableau T[1:n]) 
+FOR i FROM 2 TO n DO
+elem = T[i]
+tant que j > 0 && T [J-1]> elem
+T[j]= T[j-1]
+j--
+fin_tant_que
+T[j]=elem
+END_FOR
+END
+  

@@ -1,0 +1,23 @@
+FUNCTION dot_product(V,U)
+VAR
+ tab U(3):réel
+ tab V(3):réel
+ i:INTEGER;
+ p:réel;
+ BEGIN
+ FOR i FROM 0 to 2 STEP 1 do
+ write ("donner l`element",i+1 ,"de la vecteur V")
+ READ(V(i));
+ write("donner l`element",i+1 ,"de la vecteur U")
+ READ(U(i))
+ END_FOR
+ p<-- 0;
+ FOR i FROM 0 to 2 STEP 1 DO
+ p<--p + V (i) * U(i)
+END_FOR
+write(p)
+END 
+IF dot_product(V,U) == 0 THEN
+write("les 2 vecteurs sont orthogonaux")
+END
+
